@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "invisible",
+    status: "online",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -44,7 +44,7 @@ export const botConfig = {
     defaultCooldown: 3, 
 
     // If true, old commands are removed before re-registering.
-    deleteCommands: false,
+    deleteCommands: true,
 
     // Optional server ID used for testing slash commands quickly.
     testGuildId: process.env.TEST_GUILD_ID,
